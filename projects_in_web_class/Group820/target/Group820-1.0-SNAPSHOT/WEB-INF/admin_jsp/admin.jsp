@@ -89,6 +89,29 @@
 
             background: #228B22;
         }
+
+        .admin{
+            width: 100%;
+        }
+        .admin input{
+            padding: 5px;
+            margin: 10px;
+        }
+        .admin form button{
+            border: none;
+            background-color: #00BFFF;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 50px;
+            transition: transform 0.3s;
+        }
+        .admin form button:hover{
+            background-color: #4169E1;
+            transform: scale(1.2);
+        }
+
     </style>
 </head>
 <body>
@@ -104,7 +127,7 @@
             商品编号:<input type="text" name="Gid"/>
             商品名称:<input type="text" name="Gname"/>
             商品种类:<input type="text" name="Gtype"/>
-            <input type="submit" value="查找"/>
+            <button type="submit">查找</button>
         </form>
         <br>
         <table>

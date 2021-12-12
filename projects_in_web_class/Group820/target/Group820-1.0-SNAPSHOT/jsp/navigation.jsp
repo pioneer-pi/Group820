@@ -63,7 +63,7 @@
     <nav>
         <ul class="main">
             <li><a href="/Group820/index">网站首页</a></li>
-            <li><a href="">商品类型</a>
+            <li><a href="/Group820/listGoodsByGtype?Gtype=蔬菜">商品类型</a>
                 <div class="second">
                     <ul>
                         <li><a href="/Group820/listGoodsByGtype?Gtype=蔬菜">蔬菜</a></li>

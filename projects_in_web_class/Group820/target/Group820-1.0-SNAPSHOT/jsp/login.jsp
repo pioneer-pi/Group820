@@ -25,19 +25,46 @@
             width:100%;
         }
         .login {
-            position: absolute;
-            left: 620px;
-            bottom: 300px;
+            margin: 50px;
             width: 300px;
-            border: 5px solid green;
+            top: 100px;
+            left: 500px;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid green;
             border-radius: 5px;
+            font-family: 微软雅黑;
+            font-size: 16px;
+        }
+        .login input{
+            outline: none;
+            /*border: none;*/
+            border: 1px solid #00BFFF;
+            padding: 5px;
+            margin: 10px;
+        }
+        .login button{
+            border-radius: 5px;
+            border: none;
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #00BFFF;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .login button:hover{
+            background-color: #4169E1;
+            transform: scale(1.1);
         }
 
     </style>
 </head>
 <body>
 <div class="header ">
-    <img src="/Group820/resources/picture.jpg" alt="picture1">
+    <img src="/Group820/resources/picture.jpg" alt="picture">
 </div>
 <div class="nav">
     <%@include file="/jsp/navigation.jsp" %>
