@@ -27,11 +27,8 @@
             width: 200px;
             height: 300px;
             text-align: center;
-            /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
         }
-        /*.blank2 .card:hover{*/
-        /*    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
-        /*}*/
+
         .blank2 .card .img img{
             width: 200px;
             height: 300px;
@@ -51,6 +48,16 @@
         .blank2{
             display: flex;
         }
+
+        /*
+        introduce样式
+         */
+        .introduce p{
+            font-family: 隶书;
+            font-size: 25px;
+            margin: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -71,7 +78,7 @@
             </div>
             <div class="introduce">
                 <p>商品名: ${goods.gname}</p>
-                <p>商品价格: ${goods.gprice}元/斤</p>
+                <p>商品价格: <span style="font-family: 'Times New Roman';font-size: 30px; color: red">${goods.gprice}</span>元/斤</p>
                 <p>商品介绍: ${goods.gintroduce}</p>
             </div>
         </div>

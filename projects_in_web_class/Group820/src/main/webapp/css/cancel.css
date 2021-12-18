@@ -1,0 +1,27 @@
+/*
+取消样式
+ */
+.cancel{
+    position: relative;
+    left: 250px;
+    width: 110px;
+    font-size: 1em;
+}
+.cancel a{
+    display: block;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.cancel a:hover{
+    background-color: #4169E1;
+    transform: scale(1.2);
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}

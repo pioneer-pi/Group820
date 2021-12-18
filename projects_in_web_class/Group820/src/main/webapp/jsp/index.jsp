@@ -19,13 +19,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        .area {
-            background-color: #00008B;
-        }
-        .row {
-            display: flex;
-            /*align-items: flex-start;*/
-        }
+
 
         .header img {
 
@@ -33,7 +27,7 @@
             width:100%;
         }
         footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             width:100%;
             text-align: center;
@@ -41,6 +35,41 @@
             color: white;
             padding: 10px;
             background: #228B22;
+        }
+
+        /*
+         Card展示图片
+        */
+        .blank2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .blank2 .card{
+            margin: 40px 20px;
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+        }
+        .blank2 .card:hover{
+            box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .blank2 .card .img img{
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .blank2 .card .container{
+            padding: 10px;
+        }
+        .blank2 .card .container p{
+            text-align: center;
+        }
+        .blank2 a{
+            text-decoration: none;
         }
     </style>
 </head>
@@ -54,7 +83,22 @@
     </div>
 
     <div class="main">
-
+        <div class="blank2">
+            <c:forEach items="${goods}" var="g">
+                <c:if test="${g.gdelete==0}">
+                    <a href="/Group820/listGoodsByGid?Gid=${g.gid}">
+                        <div class="card">
+                            <div class="img">
+                                <img src="/Group820/resources/goodsimg/goods_${g.gid}.jpg" alt="${g.gname}">
+                            </div>
+                            <div class="container">
+                                <p>${g.gname}:${g.gprice}元/斤</p>
+                            </div>
+                        </div>
+                    </a>
+                </c:if>
+            </c:forEach>
+        </div>
     </div>
 
     <footer>

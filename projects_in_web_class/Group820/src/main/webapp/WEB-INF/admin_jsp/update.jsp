@@ -9,61 +9,8 @@
 <html>
 <head>
     <title>update</title>
-    <style>
-        .header img{
-            width: 100%;
-            max-height: 300px;
-        }
-
-        footer {
-            width:100%;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            color: white;
-            padding: 10px;
-
-            background: #228B22;
-        }
-        .updateform {
-            position: relative;
-            width: 600px;
-            left: 500px;
-
-        }
-        .updateform span{
-            display: inline-block;
-            width: 50px;
-        }
-        .updateform input{
-            width: 200px;
-            padding: 5px 15px;
-            margin: 20px;
-        }
-        .updateform textarea{
-            width: 700px;
-            height: 200px;
-        }
-        .updateform button{
-            margin: 10px;
-            position: relative;
-            left: 250px;
-            text-align: center;
-            padding: 10px 30px;
-            background-color: #00BFFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .updateform button:hover{
-            background-color: #4169E1;
-            transform: scale(1.2);
-            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-        }
-    </style>
+    <link rel="stylesheet" href="/Group820/css/cancel.css">
+    <link rel="stylesheet" href="/Group820/css/update.css">
 </head>
 <body>
 <div class="container">
@@ -84,6 +31,9 @@
 
             <button type="submit">提交</button>
         </form>
+        <div class="cancel">
+            <a href="/Group820/admin/welcome">取消</a>
+        </div>
     </div>
     <footer>
         <p>东北林业大学 <br>  820&copy;</p>
